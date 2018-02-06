@@ -1,0 +1,21 @@
+
+      #main{
+        position:absolute;
+        width:1200px;
+        height:340px;
+        padding:10px;
+        }
+  #main > div{
+    float:right;
+    margin:80px;
+  }
+  #d1{
+    width:400px;
+    height:300px;
+  }
+
+  #d2{
+    width:400px;
+    height:300px;
+  }
+      

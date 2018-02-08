@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> DashBoard Wireframe</title>
+    <link rel="stylesheet" href="task2.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<div id="outer">
+  <div id="top">
+      <button id="icon">  <span class="glyphicon glyphicon-menu-hamburger"></span> </button>
+      <div id="topleft">
+      <input type="text" id="searchTF" class="search" placeholder="Search">
+          <button type="button" class="search">
+              <span class="glyphicon glyphicon-search"></span>
+          </button>
+      <input type="button" id="logoutBTN" value="Logout">
+      </div>
+  </div>
+  <div id="firstline" class="firstline">
+      <div id="firstlinefirsthalf">
+        <div id="myBank" class="firstline"><h2 id="bankname"> YourBank</h2><p id="welcome">Welcome to YourBank.</p>
+        </div>
+        <div id="user"> <img id="userimg" src="images/user.png">
+            <div id="username">Username</div>
+            <span id="usersetting" class="glyphicon glyphicon-cog"></span>
+            <span id="usernotify" class="glyphicon glyphicon-bell"></span>
+        </div>
+      </div>
+      <div id="accountType" class="firstline" >
+          <h6 style="margin-left: 10px">YOUR PREMIER ACCOUNT</h6>
+          <div id="amount"><h4 style="margin-left: 10px">£ 1500</h4></div>
+          <select id="sel">
+              <option value="Default" style="display:none;">TYPE OF ACCOUNT</option>
+              <option value="Current Account">CURRENT ACCOUNT</option>
+              <option value="Salary Account">SALARY ACCOUNT</option>
+              <option value="Savings Account">SAVINGS ACCOUNT</option>
+              <option value="Pensioner's Account">PENSIONER'S ACCOUNT</option>
+          </select>
+          <div id="acsecond">
+              <div id="view"><a href=""> > VIEW STATEMENT</a></div>
+              <div id="make"> <a href=""> MAKE A QUICK TRANSFER</a></div>
+              <div id="more"> <a href=""> MORE OPTIONS</a></div>
+          </div>
+      </div>
+  </div>
+  <div id="secondline" class="secondline">
+      <div id="takealook" class="clickable"> <a href=""></a><i id="pluscircle" class="fa fa-plus-circle"></i><div id="takealooktext">Take a look</div></div>
+    <div id="actionoption" >
+            <div id="Accounts"><img class="secondimg" src="images/bullet.jpg"><div class="secondText" style="margin-left:30px">Accounts</div></div>
+            <div id="Overdraft"><img  class="secondimg" src="images/bullet.jpg"><div class="secondText">Overdraft</div></div>
+            <div id="Credit"><img  class="secondimg" src="images/bullet.jpg"><div class="secondText">Credit</div></div>
+            <div id="Payments"><img  class="secondimg" src="images/bullet.jpg"><div class="secondText">Payments</div></div>
+            <div id="Deposits"><img  class="secondimg" src="images/bullet.jpg"><div class="secondText">Deposits</div></div>
+            <div id="Cards"><img  class="secondimg" src="images/bullet.jpg"><div class="secondText">Cards</div></div>
+    </div>
+  </div>
+  <div id="thirdline" class="thirdline">
+    <div id="creditcard">Credit Card <br><h4 class="midvalue">**** **** **** 9999</h4><p class="bottomvalues">Total credit card limit:£ 5000</p>
+      <input type="button" id="cc" class="btn" value="BUTTON">
+    </div>
+    <div id= "urgentpendingpayment">Urgent Pending Payment<br><h4 class="midvalue">£ 1500</h4><p class="bottomvalues">Monthly Pending Payments:£1540</p>
+      <input type="button" id="upa" class="btn" value="PAY NOW">
+    </div>
+      <div id="investments">Investments<br><h4 class="midvalue">£ 2000</h4><p class="bottomvalues">Total: £ 14.000</p>
+          <input type="button" id="inv" class="btn" value="DETAILS">
+      </div>
+      <div id="documents">Documents<br><h4 class="midvalue">You have 2 news Documents</h4><p class="bottomvalues">1 important</p>
+          <input type="button" id="doc" class="btn" value="DETAILS">
+      </div>
+    </div>
+    <div id="fourthline">
+       <div id="leftbox">
+           <div id="product">
+               <h6 style="margin-left: 5px;">OUR SERVICES & PRODUCT</h6><br>
+               <h3 style="margin-left: 5px;">Product Name</h3>
+               <button id="discoverbtn"> DISCOVER NOW</button>
+           </div>
+           <div id="calendar"><b>CALENDAR</b>
+               <div id="datenday"><h2><b>27</b></h2><h5>Tuesday</h5></div>
+               <div id="datelefttop">4</div>
+               <div id="dateleftbottom">3</div>
+               <div id="daterighttop">18</div>
+               <div id="daterightbottom">1</div>
+               <div id="datebottom"><p>Important dates of months for payment.</p></div>
+           </div>
+           <div id="stockmarket"><b>STOCK MARKET</b> <div id="stock"> Stocks prices are higher in last 1 year.</div></div>
+       </div>
+        <div id="secondbox">
+            <div id="transactions">
+                <div id="transfirst"><b style="color:black; margin-left:10px">Transactions</b> <div id="spend">Spend by <select id="spendselect">
+                        <option class="transoption" value="Month">Month</option>
+                        <option class="transoption" value="Week">Week</option>
+                        <option class="transoption" value="Year">Year</option>
+                    </select>
+                    </div>
+                </div>
+                <div class="transdiv">Today<div id="transone" class="transtext">Card Transactions-Paypal-26/01/2018</div><div class="transamts">£ -200</div></div>
+                <div class="transdiv">Friday<div id="transtwo" class="transtext">Money Transfer-Rentals-10/01/2018</div><div class="transamts">£ +150</div></div>
+                <div class="transdiv">Tuesday<div id="transthree" class="transtext">Card Purchase-Fashion Store-08/02/2018</div><div class="transamts">£ +280</div></div>
+                <div class="transdiv">Today<div id="transfour" class="transtext">Card Purchase-Fashion Store-08/02/2018</div><div class="transamts">£ +350</div></div>
+                <div id="moretrans"><u id="transleft">10+ See More transactions</u><u id="transright">All Transactions in February</u></div>
+            </div>
+            <div id="spendings">
+                <div id="spendingText" style="color:black"><b>Total Spending of February Month</b></div>
+                <i id="spendingchart" class="fa fa-area-chart"></i>
+                <div id="spendamt"><b><h3>£ 1780</h3></b></div>
+                <div id="living" class="spen"><b>LIVING</b><br><img class="spendimg" src="images/spend.png">   </div>
+                <div id="family" class="spen"><b>FAMILY</b> <br><img class="spendimg" src="images/spend.png" style="margin-left:5px">  </div>
+                <div id="food" class="spen"><b>FOOD & DRINK</b><br><img class="spendimg" src="images/spend.png" style="margin-left:10px">    </div>
+            </div>
+            <div id="last">
+                <div id="survey"><b>CUSTOMER SURVEY</b><br>
+                    <p style="margin-left:40px">This won't take more than few seconds.</p>
+                    <h5 style="margin-left:60px; margin-top:20px">Are You satisfied with our services?</h5>
+                    <form id ="form1">
+                        <input type="radio" name="radio" value="Yes" checked style="margin-left: 120px"> Yes
+                        <input type="radio" name="radio" value="No"> No
+                    </form>
+                    <input id="sendbtn"type="button" value="Send" style="margin-left: 100px;">
+                </div>
+                <div id="currency"><b>CURRENCY</b>
+                    <select id="currencyfrom">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EURO">POUND</option>
+                    </select>
+                    <select id="currencyto">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="EURO">POUND</option>
+                    </select>
+                    <input id="currencytf"type="text" placeholder="to Currency">
+                    <input id="currencybtn" type="submit" value="SHOW CURRENCY">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+
+        <p style="font-size: 18px; position:absolute; top:0;right:0;"> Visitor No:- 99999 </p>
+        <p style="font-size: 18px; position:absolute; top:0;left:0;">Thanks for visiting YourBank's online portal.</p>
+    </div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+#container{
+  position:absolute;
+  width:100%;
+  height:140%;
+  border: 1px solid black;
+background-color: lightgray;
+
+}
+nav{
+  display: block;
+  width:100%;
+}
+a{
+  width:20%;
+}
+.content{
+  position:relative;
+  width:98%;
+  margin: 4px;
+  /*border: 1px solid black;*/
+}
+
+.navbar{
+  position: relative;
+  float:left;
+  margin:20px;
+  height:40%;
+  width:100%;
+}
+.details{
+  float:left;
+  margin:15px;
+  height:60%;
+  width:30%;
+/*  border:1px solid black;*/
+  padding:5px;
+   cursor: pointer;
+   color: white;
+   background-color: black;
+  opacity: 0.7;
+}
+#topic{
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  height:10%;
+/*  background-color: limegreen;*/
+  background-image: url('../images/bgen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header{
+  height:5%;
+}
+#topic{
+  height:15%;
+;
+}
+#mainbody{
+  position:relative;
+  height:60%;
+}
+.charts{
+  position:absolute;
+  right:0;
+  margin-right:10px;
+  margin-top:10px;
+  height:95%;
+  width: 95%;
+  visibility: hidden;
+}
+#textcontent{
+  position: relative;
+  height: auto;
+  width:auto;
+  font-size: 20px;
+}
+#footer{
+  position: absolute;
+  bottom: 0;
+  height:5%;
+  width:99.5%;
+  background-color: gray;
+  color:white;
+}
+#regions_div{
+  position:absolute;
+  visibility: hidden;
+  width: 59%; height: 80%;
+  background-color: white;
+}
+
+#geocharttext{
+  visibility: hidden;
+position:absolute;
+top:10px;
+width:40%;
+right:0;
+
+
+}
+#regions_div g[clip-path] > g + g > g > path {
+    stroke-width: 0;
+    fill: brown;
+  }
+#textbeforechart{
+  text-align:center;
+}
+#geobottomtext{
+  position:absolute;
+  bottom:0;
+  height:15%;
+  padding: 20px;
+  width:99%;
+}
+.geochart{
+  visibility:hidden;
+}
+#startimg{
+  position:absolute;
+  margin-bottom:20px;
+  margin:20px;
+  top:220px;
+  height:40%;
+  width:80%;
+}

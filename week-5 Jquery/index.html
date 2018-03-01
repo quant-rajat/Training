@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Environment </title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <!-- HEre we will load some of the scripts at starting which is required at earlier stage and rest are loaded in last-->
+    <script src="scripts/utils.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- this is the container tag in which all tags which is visible resides -->
+        <div id="container">
+          <div id="startimg" style=""><img  src="images/start.jpg"  ></div>
+              <div id="header" class="content">
+                ENVIRONMENT STATISTICS
+                <nav id="nav">
+                  | <a href="">Home</a> |
+                </nav>
+                </div>
+                <div id="topic" class="content">
+                <b style="font-size:20px;">Hey! Let's analyse our Environment and understand it's future needs.</b>
+                  <div class="navbar">
+                    <div id="criticalareasnav" class="navbar details ">
+                    <b> CRITICALLY POLLUTED AREAS</b>
+                    </div>
+                    <div id="waternav" class="navbar details ">
+                    <b>  WATER SOURCES</b>
+                    </div>
+                  
+                    <div id="pollutednav" class="navbar details ">
+                    <b>  TREE COVER IN UT/STATES</b>
+                    </div>
+                  </div>
+              </div>
+              <div id="mainbody" class="content">
+
+
+                <div id="textcontent">
+                  <div id=textbeforechart> Know Your Environment, after all it is all yours.</div>
+                    <div id="chart1" class="charts">
+                      <canvas class="mychart1" >   </canvas>
+                </div>
+                  <div id="chart2" class="charts">
+                    <canvas class="mychart2" >   </canvas>
+                </div>
+
+                <!-- Here this tag "chartgeo" will be used to publish Google's Geogrophical chart   -->
+          </div id="chartgeo" class="geochart">
+                <div id="geocharttext"><span style="font-size: 40px; color: #9d1717;">A</span>s the world continues to reel under the pressure of its fast disappearing green patches, India is setting a new trend.
+                  <p>“Despite tall claims by various agencies the forests are still degrading and also depleting due to overexploitation,” a new assessment by the Forest Research Institute (FRI) in Dehradun, found.
+                    Please hover over  the geogrophical chart on the left for data stats.
+                  </p><img src="images/tree.jpg" style="height:300px; width:500px;">
+
+
+                </div>
+                <div id="geobottomtext"class="geochart">  <!-- to publish text under geochart -->
+                  <p>Researchers at FRI looked at rain-fed areas in 27 states and one Union Territory because productivity in these areas is low and people are more likely to be dependent on forest products.
+                    After 70 years of Independence, more than two-thirds of villages adjoining forests across the country are still heavily dependent on forests for fodder,
+                    firewood and other produce.</p>
+                </div>
+                <div id="regions_div" ></div>
+
+              </div>
+
+              <div id="footer"class="content">
+			<div class="footer-left">
+
+				<h4>Quovantis Technologies</h4>
+				<p class="footer-company-name" style="position:absolute; right:0; top:4px">Quovantis Technologies &copy; 2018</p>
+			</div>
+
+			<div class="footer-center" style="position:absolute; top:9px; margin-left:200px;">
+
+								<div class="footer-icons" >
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+            </div>
+
+    </div>
+    <!-- Now all other remaining scripts used are loaded here  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/event.js"></script>
+    <script src="scripts/criticalareas.js"></script>
+    <script type="text/javascript" src="scripts/treecover.js">  </script>
+    <script type="text/javascript" src="scripts/watersources.js">  </script>
+
+
+  </body>
+</html>

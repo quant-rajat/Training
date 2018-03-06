@@ -10,7 +10,6 @@ function transformTreeCover(jsndata){               // to transform the data com
 
 function loadchartTreeCover(jsondata){              // to publish the Geo chart for Tree cover estimates statewise...
 
-console.log(jsondata);
     google.charts.load('current', {
       'packages':['geochart'],
       // Note: we will need to get a mapsApiKey for our project.

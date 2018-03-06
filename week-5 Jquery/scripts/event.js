@@ -7,6 +7,7 @@ $(document).ready(function(){
   var el=$(".details");                       //getting reference array all 3 charts click div
   var geobottomtext=$("#geobottomtext");
   var geocharttext=$("#geocharttext");
+
   ch1.hide();                                 //setting display of charts div to none
   ch2.hide();
   geo.hide();

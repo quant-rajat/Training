@@ -3,9 +3,9 @@
 function transformCritical(jsondata){
 
     var val1=[],val3=[],val4=[],val5=[];
-    console.log(jsondata);
+
     var data=jsondata.data;     // here we will be using array to store coming data and pass it's element to publish in charts
-  console.log(data);
+
     var labl=jsondata.fields;
     for(var x =0;x<data.length;x++){
         val1.push(data[x][1]);
@@ -22,13 +22,12 @@ function transformCritical(jsondata){
 
 
        value.push(val1,val3,val4,val5);
-      console.log(value);
+
       return value ;
 }
 
 function loadchartCritical(jdata){    // chart creating function for publishing chart from data received by above transformation function of critical polluted areas
 
-  console.log(jdata);
 var ctx= $('.mychart1');
 var chart = new Chart(ctx, {
       type: 'bar',                   // The type of chart we want to create
